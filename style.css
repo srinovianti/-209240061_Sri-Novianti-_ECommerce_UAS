@@ -1,0 +1,178 @@
+/* ============================
+   Global Styles
+   ============================ */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: #333;
+}
+
+a,
+button {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* ============================
+   Header
+   ============================ */
+header {
+  background-color: #2c3e50;
+  color: #fff;
+  padding: 1em 0;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+.user-links a {
+  margin-left: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* ============================
+   Breadcrumbs
+   ============================ */
+.breadcrumbs {
+  background-color: #eee;
+  padding: 10px 20px;
+  font-size: 14px;
+}
+
+/* ============================
+   Main Content
+   ============================ */
+main {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+/* Produk grid responsif */
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+.products article {
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+/* ⭐ Hover effect */
+.products article:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+.products img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.products h3 {
+  margin: 10px 0 5px;
+}
+
+/* ============================
+   Info Section
+   ============================ */
+.info {
+  display: flex;
+  gap: 40px;
+  margin-top: 40px;
+}
+.kategori, .tentang-kami {
+  flex: 1;
+}
+.kategori ul {
+  list-style: square inside;
+  padding-left: 0;
+}
+.kategori ul li {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+.kategori ul li:hover {
+  color: #2c3e50;
+  text-decoration: underline;
+}
+
+/* ============================
+   Footer
+   ============================ */
+footer {
+  background-color: #2c3e50;
+  color: #fff;
+  padding: 30px 20px;
+  text-align: center;
+}
+.footer-nav a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+.newsletter-signup input {
+  padding: 8px;
+  margin-top: 10px;
+  width: 200px;
+}
+.newsletter-signup button {
+  padding: 8px 15px;
+  background-color: #34495e;
+  color: #fff;
+  border: none;
+  margin-left: 5px;
+  cursor: pointer;
+}
+.social-media img, .payment-methods img {
+  margin: 10px;
+}
+
+/* ============================
+   Responsif
+   ============================ */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .info {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 480px) {
+  .newsletter-signup input,
+  .newsletter-signup button {
+    width: 100%;
+  }
+  .user-links {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+}

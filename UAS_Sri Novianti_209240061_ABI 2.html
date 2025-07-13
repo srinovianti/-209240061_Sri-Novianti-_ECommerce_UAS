@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PiuPiu | Toko Online</title>
+
+    <!-- Styles & Favicon -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <!-- Sedikit CSS in‑page untuk efek hover kategori -->
+    <style>
+      .kategori ul li {
+        cursor: pointer;
+      }
+      .kategori ul li:hover {
+        text-decoration: underline;
+        color: #0ff1c4;
+      }
+    </style>
+</head>
+<body>
+  <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html"><img src="IMAGE/piupiu.jpg" alt="Logo" height="50"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="produk1.html">Produk</a></li>
+                    <li><a href="#">Keranjang</a></li>
+                    <li><a href="kontak.html">Kontak</a></li>
+                </ul>
+            </nav>
+            <div class="user-links">
+                <a href="#">Login</a>
+                <a href="#">🛒 (0)</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigasi Breadcrumb -->
+    <nav class="breadcrumbs">
+        <a href="index.html">Beranda</a> &gt; <span>Beranda</span>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Produk Terbaru -->
+        <section>
+            <h2>Produk Terbaru</h2>
+            <div class="products">
+                <article>
+                    <h3>buku gambar</h3>
+                    <img src="IMAGE/buku-gambar.jpeg" alt="buku catatan">
+                    <p>Tingkatkan kreativitas dan kesenangan anak-anak Anda dengan buku gambar yang berkualitas! Buku gambar kami dirancang untuk memberikan ruang yang luas untuk menggambar dan berekspresi.</p>
+                    <p>Harga: Rp5.000</p>
+                </article>
+                <article>
+                    <h3>dimsum</h3>
+                    <img src="IMAGE/dimsum.jpeg" alt="dimsum">
+                    <p>Memiliki rasa yang lezat dan variatif, dengan berbagai jenis isian. Dimsum dapat dinikmati sebagai jajanan yang ringan dan mengenyangkan.</p>
+                    <p>Harga: Rp5.000</p>
+                </article>
+                <article>
+                    <h3>strap phone</h3>
+                    <img src="IMAGE/strap-phone.jpeg" alt="strap phone">
+                    <p>Tingkatkan gaya dan keamanan HP Anda dengan strap HP yang stylish!</p>
+                    <p>Harga: Rp15.000</p>
+                </article>
+                <article>
+                    <h3>hijab</h3>
+                    <img src="IMAGE/hijab.jpeg" alt="hijab">
+                    <p>Tingkatkan gaya dan kesederhanaan Anda dengan hijab segi empat yang modis dan nyaman!</p>
+                    <p>Harga: Rp30.000</p>
+                </article>
+                <article>
+                    <h3>monopoli</h3>
+                    <img src="IMAGE/monopoli.jpeg" alt="monopoli">
+                    <p>Tingkatkan keseruan dan keterampilan strategis Anda dengan permainan Monopoli!</p>
+                    <p>Harga: Rp15.000</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Kategori dan Tentang Kami -->
+        <section class="info">
+            <div class="kategori">
+                <h2>Kategori</h2>
+                <ul>
+                    <li data-cat="Peralatan Sekolah">Peralatan Sekolah</li>
+                    <li data-cat="Makanan & Minuman">Makanan & Minuman</li>
+                    <li data-cat="Aksesoris Handphone">Aksesoris Handphone</li>
+                    <li data-cat="Pakaian & Fashion">Pakaian & Fashion</li>
+                    <li data-cat="Mainan Anak">Mainan Anak</li>
+                </ul>
+            </div>
+            <div class="tentang-kami">
+                <h2>Tentang Kami</h2>
+                <p>piupiu adalah toko online yang menyediakan berbagai produk kebutuhan sehari-hari dengan harga terjangkau dan kualitas terbaik. Kami berkomitmen memberikan pelayanan cepat dan pengalaman belanja yang menyenangkan.</p>
+            </div>
+        </section>
+
+        <!-- Produk berdasarkan kategori (dinamis) -->
+         <section id="kategori-section" style="display: none;">
+          <h2 id="kategori-title"></h2>
+          <div id="kategori-products" class="products"></div>
+         </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-nav">
+            <a href="#">Tentang Kami</a>
+            <a href="#">Kontak</a>
+            <a href="#">Kebijakan Privasi</a>
+            <a href="#">Syarat & Ketentuan</a>
+        </div>
+        <div class="newsletter-signup">
+            <h3>Berlangganan Newsletter</h3>
+            <form action="#">
+                <input type="email" placeholder="Masukkan email Anda" />
+                <button type="submit">Berlangganan</button>
+            </form>
+        </div>
+        <div class="social-media">
+            <a href="#"><img src="IMAGE/facebook.png" alt="Facebook" width="30"></a>
+            <a href="#"><img src="IMAGE/twitter.png" alt="Twitter" width="30"></a>
+            <a href="#"><img src="IMAGE/instagram.jpeg" alt="Instagram" width="30"></a>
+        </div>
+        <div class="payment-methods">
+            <img src="IMAGE/dana.png" alt="Dana" width="50">
+            <img src="IMAGE/bca.png" alt="BCA" width="50">
+            <img src="IMAGE/mandiri.png" alt="Mandiri" width="50">
+        </div>
+    </footer>
+
+    <!--JavaScript eksternal untuk kategori-->
+    <script src="script.js" defer></script>
+</body>
+</html>
